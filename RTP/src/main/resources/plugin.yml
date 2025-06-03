@@ -1,0 +1,23 @@
+name: SecureRTP
+version: 1.0.3
+main: com.clansmp.RTP.RandomTeleportGP
+api-version: 1.18
+author: GigaMuffin
+description: Random teleport plugin with GriefPrevention and WorldGuard claim avoidance.
+commands:
+  rtp:
+    description: Teleports a player to a random location.
+    usage: /<command>
+    permission: rtp.use # Optional permission
+    permission-message: You don't have permission to use the RTP command.
+  reloadrtp:
+    description: Reloads the RTP plugin configuration.
+    usage: /<command>
+    permission: rtp.reload # New permission for reloading
+    permission-message: You don't have permission to reload the RTP plugin.
+permissions:
+  rtp.use:
+    description: Allows players to use the random teleport command.
+    default: true
+  rtp.reload:
+    description: Allows users to reload the EpicRTP config.yml file.
